@@ -1,0 +1,119 @@
+/* Variáveis CSS para cores e outros estilos */
+:root {
+  --background: hsl(60, 56%, 94%); /* #FEFAE0 */
+  --foreground: hsl(79, 39%, 16%); /* #283618 */
+
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(79, 39%, 16%);
+
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(79, 39%, 16%);
+
+  --primary: hsl(79, 39%, 16%); /* #283618 */
+  --primary-foreground: hsl(60, 56%, 94%);
+
+  --secondary: hsl(79, 29%, 32%); /* #606C38 */
+  --secondary-foreground: hsl(60, 56%, 94%);
+
+  --muted: hsl(210, 40%, 96.1%);
+  --muted-foreground: hsl(79, 10%, 40%);
+
+  --accent: hsl(32, 66%, 62%); /* #DDA15E */
+  --accent-foreground: hsl(79, 39%, 16%);
+
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+
+  --border: hsl(214.3, 31.8%, 91.4%);
+  --input: hsl(214.3, 31.8%, 91.4%);
+  --ring: hsl(79, 39%, 16%);
+
+  --radius: 0.5rem;
+
+  --sidebar-background: hsl(79, 39%, 16%); /* #283618 */
+  --sidebar-foreground: hsl(60, 56%, 94%); /* #FEFAE0 */
+  --sidebar-primary: hsl(60, 56%, 94%);
+  --sidebar-primary-foreground: hsl(79, 39%, 16%);
+  --sidebar-accent: hsl(79, 29%, 32%); /* #606C38 */
+  --sidebar-accent-foreground: hsl(60, 56%, 94%);
+  --sidebar-border: hsl(79, 29%, 32%);
+  --sidebar-ring: hsl(32, 66%, 62%);
+}
+
+.dark {
+  --background: hsl(79, 39%, 16%); /* #283618 */
+  --foreground: hsl(60, 56%, 94%); /* #FEFAE0 */
+
+  --card: hsl(79, 39%, 16%);
+  --card-foreground: hsl(60, 56%, 94%);
+
+  --popover: hsl(79, 39%, 16%);
+  --popover-foreground: hsl(60, 56%, 94%);
+
+  --primary: hsl(79, 29%, 32%); /* #606C38 */
+  --primary-foreground: hsl(60, 56%, 94%);
+
+  --secondary: hsl(32, 66%, 62%); /* #DDA15E */
+  --secondary-foreground: hsl(79, 39%, 16%);
+
+  --muted: hsl(28, 38%, 25%);
+  --muted-foreground: hsl(60, 36%, 80%);
+
+  --accent: hsl(26, 67%, 44%); /* #BC6C25 */
+  --accent-foreground: hsl(60, 56%, 94%);
+
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(60, 56%, 94%);
+
+  --border: hsl(79, 29%, 32%);
+  --input: hsl(79, 29%, 32%);
+  --ring: hsl(60, 56%, 94%);
+}
+
+/* Estilos globais */
+* {
+  border-color: var(
+    --border
+  ); /* Assume que --border está definido nas variáveis */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom styles for AgroConecta */
+.status-pending {
+  background-color: hsl(60, 100%, 90%); /* Cor amarela clara */
+  color: hsl(60, 100%, 35%); /* Cor amarela escura */
+  padding: 0.25rem 0.5rem; /* px-2 py-1 */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 0.75rem; /* text-xs */
+  font-weight: 500; /* font-medium */
+}
+
+.status-paid {
+  background-color: hsl(
+    120,
+    60%,
+    70%
+  ); /* Cor verde clara (ajuste conforme --agrogreen-light) */
+  color: hsl(0, 0%, 100%); /* white */
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status-delivered {
+  background-color: hsl(
+    30,
+    40%,
+    70%
+  ); /* Cor marrom clara (ajuste conforme --agrobrown-light) */
+  color: hsl(0, 0%, 100%); /* white */
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
